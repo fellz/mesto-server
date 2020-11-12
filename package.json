@@ -1,0 +1,26 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "serve": "tsc --build tsconfig.json -w",
+    "pm2": "pm2 start dist/app.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pg": "^7.14.5",
+    "apollo-server-express": "^2.18.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "knex": "^0.21.6",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.3",
+    "pm2": "^4.5.0"
+  }
+}
